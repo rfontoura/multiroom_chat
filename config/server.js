@@ -29,7 +29,7 @@ app.use(expressValidator());
 // efetua auto-load das rotas, models e controllers para o objeto 'app'
 consign()
     .include('app/routes')
-    .then('app/models')
+    //.then('app/models')
     .then('app/controllers')
     .into(app);
 
